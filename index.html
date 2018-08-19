@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta  name="viewport" content="width=device-width, initial=-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="testing.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet">
+	<title></title>
+</head>
+
+
+<body>
+
+
+<header class="d-flex justify-content-between p-3" id="main-header">
+	<h3 class=" p-2 mr-auto">WhatsApp</h3>
+	<i class="fas fa-search ml-auto mr-3 p-2 align-self-center" style="font-weight:600 !important;"></i>
+	<i class="fas fa-ellipsis-v mr-4 p-2 align-self-center" style="font-weight:600 !important;"></i>
+</header>
+
+
+<nav class="sticky-top">
+  <div class="nav nav-tabs d-flex justify-content-around text-center flex-nowrap" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active flex-fill " id="nav-chats-tab" data-toggle="tab" href="#nav-chats" role="tab" aria-controls="nav-chats" aria-selected="true">Chats</a>
+    <a class="nav-item nav-link flex-fill " id="nav-conversation-tab" data-toggle="tab" href="#nav-conversation" role="tab" aria-controls="nav-conversation" aria-selected="false">conversations</a>
+    <a class="nav-item nav-link flex-fill " id="nav-unread-tab" data-toggle="tab" href="#nav-unread" role="tab" aria-controls="nav-unread" aria-selected="false">unread<span class="badge badge-pill ml-2" id="nav-badge-pill">10</span></a>
+    <a class="nav-item nav-link flex-fill " id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">profile</a>
+  </div>
+</nav>
+
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active container-fluid p-1" id="nav-chats" role="tabpanel" aria-labelledby="nav-chats-tab">
+  	
+  	<div class="row no-gutters chatheads" id="row1">
+  		<div class="col-md-1 col-2 ml-md-2 dp">
+  			<img src="avnitdp.jpg" alt="dp1" class="img-fluid rounded-circle">
+  		</div>
+  		<div class="col-auto d-flex flex-column justify-content-center align-items-start ml-md-5 ml-4 chat">
+  			<a class="sender" role="button" data-toggle="modal" data-target="#chatboxModal" style="font-weight: bold; cursor: pointer;">Avnit</a>
+  			<p style="font-size:1.2rem;"><i class="fas fa-video" style="font-size:1.2rem; color:#e60000; margin-right:0.5vw;"></i>Missed video call</p>
+  		</div>
+  		<div class="col-auto ml-auto d-flex flex-column justify-content-start align-items-end text-muted sent">
+  			<small class="m-1 p-1 text-capitalize">Just now</small>
+  			<i class="fas fa-thumbtack m-2 mr-4"></i>
+  		</div>
+  	</div>
+
+  	<div class="row no-gutters chatheads" id="row2">
+  		<div class="col-md-1 col-2 ml-md-2 dp">
+  			<img src="bestiesicon.jpg" alt="dp2" class="img-fluid rounded-circle">
+  		</div>
+  		<div class="col-auto d-flex flex-column justify-content-center align-items-start ml-md-5 ml-3 chat ">
+  			<b class="sender" style="">Besties Forever<i class="far fa-kiss-wink-heart ml-2" style="color: #00ace6; font-size:1.4rem;"></i></b>
+  			<p style="font-size:1.2rem;">Mahiii: No commments bittu<i class="far fa-grin-squint-tears ml-2" style="color: #00ace6; font-size:1.4rem;"></i></p>
+  		</div>
+  		<div class="col-auto ml-auto d-flex flex-column justify-content-start align-items-end text-muted sent">
+  			<small class="m-1 p-1">21:59</small>
+  		</div>
+  	</div>
+
+
+  	<div class="row no-gutters chatheads" id="row3">
+  		<div class="col-md-1 col-2 ml-md-2 dp">
+  			<img src="mahidp.jpg" alt="dp3" class="img-fluid rounded-circle">
+  		</div>
+  		<div class="col-auto d-flex flex-column justify-content-center align-items-start ml-md-5 ml-3 chat">
+  			<b class="sender" style="">Mahiii</b>
+  			<p style="font-size:1.2rem;"><i class="fas fa-check-double" style="font-size:0.7rem; color:#8f8f8f; margin-right:0.5vw;"></i>Huh!! We'll see!!</p>
+  		</div>
+  		<div class="col-auto ml-auto d-flex flex-column justify-content-start align-items-end text-muted sent">
+  			<small class="m-1 p-1">21:00</small>
+  		</div>
+  	</div>
+
+
+  	<div class="row no-gutters chatheads" id="row4">
+  		<div class="col-md-1 col-2 ml-md-2 dp">
+  			<img src="golidp.jpg" alt="dp4" class="img-fluid rounded-circle">
+  		</div>
+  		<div class="col-auto d-flex flex-column justify-content-center align-items-start ml-md-5 ml-3 chat">
+  			<b class="sender" style="">Goluu</b>
+  			<p style="font-size:1.2rem;">Gonna come back soon bittu<i class="far fa-grin-hearts ml-2" style="color: #00ace6; font-size:1.4rem;"></i></p>
+  		</div>
+  		<div class="col-auto ml-auto d-flex flex-column justify-content-start align-items-end text-muted sent">
+  			<small class="m-1 p-1">14:00</small>
+  		</div>
+  	</div>
+
+
+  	<div class="row no-gutters chatheads" id="row5">
+  		<div class="col-md-1 col-2 ml-md-2 dp">
+  			<img src="maadp.jpg" alt="dp5" class="img-fluid rounded-circle">
+  		</div>
+  		<div class="col-auto d-flex flex-column justify-content-center align-items-start ml-md-5 ml-3 chat">
+  			<b class="sender" style="">Maa</b>
+  			<p style="font-size:1.2rem;"><i class="fas fa-phone"style="font-size:1.2rem; color:#ff1111; margin-right:0.5vw;"></i>Missed voice call</p>
+  		</div>
+  		<div class="col-auto ml-auto d-flex flex-column justify-content-start align-items-end text-muted sent">
+  			<small class="m-1 p-1 w-100">Yesterday</small>
+  		</div>
+  	</div>
+
+
+    <div class="row no-gutters chatheads" id="row7">
+      <div class="col-md-1 col-2 ml-md-2 dp">
+        <img src="yshumishudp.jpg" alt="dp7" class="img-fluid rounded-circle">
+      </div>
+      <div class="col-auto d-flex flex-column justify-content-center align-items-start ml-md-5 ml-3 chat">
+        <b class="sender" style="">Yashuu-Mishuu</b>
+        <p style="font-size:1.2rem;">Our business is our business, none of your business<i class="far fa-grin-tears ml-2"style="color: #00ace6; font-size:1.4rem;"></i></p>
+      </div>
+      <div class="col-auto ml-auto d-flex flex-column justify-content-start align-items-end text-muted sent">
+        <small class="m-1 p-1">Yesterday</small>
+      </div>
+    </div>
+
+
+  	<div class="row no-gutters chatheads" id="row6">
+  		<div class="col-md-1 col-2 ml-md-2 dp">
+  			<img src="collegeicon.jpg" alt="dp6" class="img-fluid rounded-circle">
+  		</div>
+  		<div class="col-auto d-flex flex-column justify-content-center align-items-start ml-md-5 ml-3 chat">
+  			<b class="sender" style="">College gang<i class="far fa-grin-tongue-wink ml-2"style="color: #00ace6; font-size:1.4rem;"></i></b>
+  			<p style="font-size:1.2rem;"><i class="fas fa-camera"style="font-size:1.2rem; color:#8f8f8f; margin-right:0.5vw;"></i>Happy Friendship Day!!</p>
+  		</div>
+  		<div class="col-auto ml-auto d-flex flex-column justify-content-start align-items-end text-muted sent">
+  			<small class="m-1 p-1">05/08/2018</small>
+  			<i class="fas fa-volume-off m-2 mr-4"></i>
+  		</div>
+  	</div>
+
+	
+  	<div class="row no-gutters chatheads" id="row8">
+  		<div class="col-md-1 col-2 ml-md-2 dp">
+  			<img src="mausidp.jpg" alt="dp8" class="img-fluid rounded-circle">
+  		</div>
+  		<div class="col-auto d-flex flex-column justify-content-center align-items-start ml-md-5 ml-3 chat">
+  			<b class="sender" style="">Mausi</b>
+  			<p style="font-size:1.2rem;"><i class="fas fa-camera"style="font-size:1.2rem; color:#8f8f8f; margin-right:0.5vw;"></i>Photo</p>
+  		</div>
+  		<div class="col-auto ml-auto d-flex flex-column justify-content-start align-items-end text-muted sent">
+  			<small class="m-1 p-1">01/08/2018</small>
+  			<i class="fas fa-volume-off m-2 mr-4"></i>
+  		</div>
+  	</div>
+
+  	<div class="text-center text-muted mt-5 font-weight-bold">No Archived Chats</div>
+  </div>
+
+
+  <div class="tab-pane fade" id="nav-conversation" role="tabpanel" aria-labelledby="nav-conversation-tab">
+  	
+  	<div class="" id="conv-main">
+	  	<div class="d-flex justify-content-center align-items-center abc">
+	  		<div class="d-inline-block rounded conv-day">Today</div>
+	  	</div>
+
+	  	<div class="d-flex flex-column p-3">
+	  		
+	  		<div class="d-inline-flex">
+		  		<div class="d-flex justify-content-between px-1 px-sm-2 pt-2 msg">
+		  			<p class="align-self-start mr-2 mr-sm-4">Hey</p>
+		  			<span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">11:58 PM</span>
+		  		</div>
+		  	</div>
+
+
+	  		<div class="ml-auto d-flex justify-content-between px-1 px-sm-2 pt-2 rpl">
+	  			<p class="align-self-start mr-3 mr-sm-4">whatsup</p>
+	  			<span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">11:58 PM</span>
+	  		</div>
+
+	  		<div class="d-inline-flex">
+		  		<div class="d-flex justify-content-between px-1 px-sm-2 pt-2 msg">
+		  			<p class="align-self-start mr-2 mr-sm-4">nothing much</p>
+		  			<span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">11:58 PM</span>
+		  		</div>
+		  	</div>
+
+	  		<div class="d-flex ml-auto justify-content-between px-1 px-sm-2 pt-2 rpl">
+	  			<p class="align-self-start mr-3 mr-sm-4">would you mind if i come over</p>
+	  			<span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">11:58 PM</span>
+	  		</div>
+
+	  		<div class="d-inline-flex">
+		  		<div class="d-flex justify-content-between px-1 px-sm-2 pt-2 msg">
+		  			<p class="align-self-start mr-2 mr-sm-4">why would i?</p>
+		  			<span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">11:58 PM</span>
+		  		</div>
+		  	</div>
+
+		  	<div class="d-inline-flex">
+		  		<div class="d-flex justify-content-between px-1 px-sm-2 pt-2 msg">
+		  			<p class="align-self-start mr-2 mr-sm-4">getting bored anyway</p>
+		  			<span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">11:58 PM</span>
+		  		</div>
+		  	</div>
+
+	  		<div class="d-flex ml-auto justify-content-between px-1 px-sm-2 pt-2 rpl">
+	  			<p class="align-self-start mr-3 mr-sm-4">okay then here i come</p>
+	  			<span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">11:58 PM</span>
+	  		</div>
+
+	  		<div class="d-inline-flex">
+		  		<div class="d-flex justify-content-between px-1 px-sm-2 pt-2 msg">
+		  			<p class="align-self-start mr-2 mr-sm-4">okay then m waitingggg</p>
+		  			<span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">11:58 PM</span>
+		  		</div>
+		  	</div>
+      </div>
+
+	  	<div class="d-flex">
+        <div class="input-group flex-nowrap m-3">
+          <div class="input-group-prepend" style="">
+            <i class="far fa-laugh fa-2x input-group-text p-3 emoji"></i>
+          </div>
+          <textarea class="form-control p-3 " placeholder="Your message here" style="border: none;"></textarea>
+          <div class="input-group-append"style=" border: none;">
+            <i class="fas fa-paperclip fa-2x input-group-text p-3" style="background-color: #ffffff; border: none;"></i>
+            <i class="fas fa-camera fa-2x input-group-text p-3 camera" style="background-color: #ffffff; border: none;"></i>
+          </div>
+        </div>
+        <div class=" align-self-center mx-3 p-3" style="background-color: #0d7347; color: #efefef; border-radius: 30rem;">
+            <i class="fas fa-microphone fa-2x"></i>
+        </div>
+      </div>
+
+	  </div>
+  </div>
+
+
+
+  <div class="tab-pane fade" id="nav-unread" role="tabpanel" aria-labelledby="nav-unread-tab">
+
+
+    <div class="row no-gutters chatheads">
+      <div class="col-md-1 col-2 ml-md-2 dp">
+        <img src="yshumishudp.jpg" alt="dp1" class="img-fluid rounded-circle">
+      </div>
+      <div class="col-auto d-flex flex-column justify-content-center align-items-start ml-md-5 ml-4 chat">
+        <b class="sender" style="">Yashuu-Mishuu</b>
+        <p style="font-size:1.2rem;"><i class="fas fa-camera"style="font-size:1.2rem; color:#8f8f8f; margin-right:0.5vw;"></i>Hello Fraandzz!! Chai pee lo!!<i class="far fa-grin-tongue-wink" style="color: #00ace6; font-size:1.4rem;"></i></p>
+      </div>
+      <div class="col-auto ml-auto d-flex flex-column justify-content-start align-items-end sent">
+        <small class="m-1 p-1 text-capitalize" style="color: #25df44; font-weight: 600;">Just now</small>
+        <div>
+          <small class="badge badge-pill mr-2 mt-2 unread-badge-pill">
+          2
+          </small>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row no-gutters chatheads">
+      <div class="col-md-1 col-2 ml-md-2 dp">
+        <img src="avnitdp.jpg" alt="dp2" class="img-fluid rounded-circle">
+      </div>
+      <div class="col-auto d-flex flex-column justify-content-center align-items-start ml-md-5 ml-3 chat">
+        <b class="sender" style="">Avnit</b>
+        <p style="font-size:1.2rem;">A cup of tea <i class="fas fa-coffee" style="color: #00ace6; font-size:1.4rem"></i> and morning walk</p>
+      </div>
+      <div class="col-auto ml-auto d-flex flex-column justify-content-start align-items-end sent">
+        <small class="m-1 p-1" style="color: #25df44; font-weight: 600">21:45</small>
+        <div>
+          <small class="badge badge-pill mr-2 mt-2 unread-badge-pill">
+          4
+          </small>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <div class="row no-gutters chatheads">
+      <div class="col-md-1 col-2 ml-md-2 dp">
+        <img src="collegeicon.jpg" alt="dp3" class="img-fluid rounded-circle">
+      </div>
+      <div class="col-auto d-flex flex-column justify-content-center align-items-start ml-md-5 ml-3 chat">
+        <b class="sender" style="">College gang<i class="far fa-grin-tongue-wink ml-2"style="color: #00ace6; font-size:1.4rem;"></i></b>
+        <p style="font-size:1.2rem;">see y'all tomorrow</p>
+      </div>
+      <div class="col-auto ml-auto d-flex flex-column justify-content-start align-items-end sent">
+        <small class="m-1 p-1" style="color: #25df44; font-weight: 600">Yesterday</small>
+        <div>
+          <small class="badge badge-pill mr-2 mt-2 unread-badge-pill">
+          41
+          </small>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <div class="row no-gutters chatheads">
+      <div class="col-md-1 col-2 ml-md-2 dp">
+        <img src="mahidp.jpg" alt="dp4" class="img-fluid rounded-circle">
+      </div>
+      <div class="col-auto d-flex flex-column justify-content-center align-items-start ml-md-5 ml-3 chat">
+        <b class="sender" style="">Mahiii</b>
+        <p style="font-size:1.2rem;">Duh!! Buzz off!!</p>
+      </div>
+      <div class="col-auto ml-auto d-flex flex-column justify-content-start align-items-end sent">
+        <small class="m-1 p-1" style="color: #25df44; font-weight: 600">Yesterday</small>
+        <div>
+          <small class="badge badge-pill mr-2 mt-2 unread-badge-pill">
+          1
+          </small>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <div class="row no-gutters chatheads">
+      <div class="col-md-1 col-2 ml-md-2 dp">
+        <img src="golidp.jpg" alt="dp5" class="img-fluid rounded-circle">
+      </div>
+      <div class="col-auto d-flex flex-column justify-content-center align-items-start ml-md-5 ml-3 chat">
+        <b class="sender" style="">Golu</b>
+        <p style="font-size:1.2rem;">Check these out!!</p>
+      </div>
+      <div class="col-auto ml-auto d-flex flex-column justify-content-start align-items-end sent">
+        <small class="m-1 p-1" style="color: #25df44; font-weight: 600">Yesterday</small>
+        <div>
+          <small class="badge badge-pill mr-2 mt-2 unread-badge-pill">
+          2
+          </small>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <div class="row no-gutters chatheads">
+      <div class="col-md-1 col-2 ml-md-2 dp">
+        <img src="bestiesicon.jpg" alt="dp6" class="img-fluid rounded-circle">
+      </div>
+      <div class="col-auto d-flex flex-column justify-content-center align-items-start ml-md-5 ml-3 chat">
+        <b class="sender" style="">Besties Forever<i class="far fa-kiss-wink-heart ml-2" style="color: #00ace6; font-size:1.4rem;"></i></b>
+        <p style="font-size:1.2rem;">Mahiii: As if I care!!</p>
+      </div>
+      <div class="col-auto ml-auto d-flex flex-column justify-content-start align-items-end sent">
+        <small class="m-1 p-1" style="color: #25df44; font-weight: 600">Yesterday</small>
+        <div>
+          <small class="badge badge-pill mr-2 mt-2 unread-badge-pill">
+          4
+          </small>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" style="background-color: #d9d9d9;border:1px solid #d9d9d9; font-size: 1.5rem;">
+
+      <div class="mx-auto my-5">
+        <img class="img-fluid rounded-circle d-block mx-auto" id="mydp" style="box-shadow: -3px 3px 20px -1px ;" src="mydp.jpg" alt="mydp">
+        <div class="d-inline-block p-3" style="background-color: #0d7347; color: #efefef; border-radius: 50rem;position:relative;bottom:7vh;left:52%; height: 3.5rem;">
+            <i class="fas fa-camera" style="font-size: 1.5rem;"></i>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center p-2 my-3 mx-1" style="background-color: #ffffff;">
+        <p class="my-1">
+          Mahek
+          <i class="fas fa-heart" style="color: #e60000; opacity: 50%"></i>
+        </p>
+        <i class="fas fa-pen ml-auto mr-1" style="color: #0d7347;"></i>
+      </div>
+
+      <p class="m-3 p-3 text-muted" style="font-size: 0.85em;">This is not your username or pin. This name will be visible to your WhatsApp contacts.</p>
+
+      <div class="p-2 mt-3 mx-1 mb-0" style="background-color: #fff;">
+        <h4 class="p-2 my-3 mx-1" style="color: #0d7347">About and Phone Number</h4>
+        <p class="p-2 my-3 mx-1">Busy</p>
+        <hr>
+        <p class="p-2 my-3 mx-1">+91-9399149626</p>
+      </div>
+
+  </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="chatboxModal" tabindex="-1" role="dialog" aria-labelledby="chatboxModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" id="modal-content">
+      <div class="modal-header mr-0 sticky-top d-flex justify-content-between flex-fill align-items-center">
+        <a role="button" data-dismiss="modal" aria-label="Close"><i aria-hidden="true" class="fas fa-arrow-left" style="font-size: 1.7rem; cursor: pointer;"></i></a>
+
+        <div class="mx-3" style="width: 7rem;"><img src="avnitdp.jpg" alt="dp" class="img-fluid rounded-circle"></div>
+        <div class="d-flex flex-column justify-content-center align-items-start">
+          <b>Avnit</b>
+          <small style="font-size: 0.9rem;">last seen today at 11:00</small>
+        </div>
+        <div class="d-flex ml-auto justify-content-around align-items-center">
+          <i class="fas fa-video ml-auto p-2" style="font-size: 1.7rem;"></i>
+          <i class="fas fa-phone p-2" style="font-size: 1.7rem;"></i>
+          <i class="fas fa-ellipsis-v p-2" style="font-size: 1.7rem;"></i>
+        </div>
+
+      </div>
+
+      <div class="modal-body">
+
+
+        <div class="" id="conv-main-2">
+        <div class="d-flex justify-content-center align-items-center abc">
+          <div class="d-inline-block rounded conv-day">Today</div>
+        </div>
+
+        <div class="d-flex flex-column p-3">
+          
+          <div class="d-inline-flex">
+            <div class="d-flex justify-content-between px-1 px-sm-2 pt-2 msg">
+              <p class="align-self-start mr-2 mr-sm-4">Hey</p>
+              <span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">10:58</span>
+            </div>
+          </div>
+
+
+          <div class="ml-auto d-flex justify-content-between px-1 px-sm-2 pt-2 rpl">
+            <p class="align-self-start mr-3 mr-sm-4">whatsup</p>
+            <span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">10:58</span>
+          </div>
+
+          <div class="d-inline-flex">
+            <div class="d-flex justify-content-between px-1 px-sm-2 pt-2 msg">
+              <p class="align-self-start mr-2 mr-sm-4">nothing much</p>
+              <span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">10:58</span>
+            </div>
+          </div>
+
+          <div class="d-flex ml-auto justify-content-between px-1 px-sm-2 pt-2 rpl">
+            <p class="align-self-start mr-3 mr-sm-4">would you mind if i come over</p>
+            <span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">10:58</span>
+          </div>
+
+          <div class="d-inline-flex">
+            <div class="d-flex justify-content-between px-1 px-sm-2 pt-2 msg">
+              <p class="align-self-start mr-2 mr-sm-4">why would i?</p>
+              <span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">11:00</span>
+            </div>
+          </div>
+
+          <div class="d-inline-flex">
+            <div class="d-flex justify-content-between px-1 px-sm-2 pt-2 msg">
+              <p class="align-self-start mr-2 mr-sm-4">getting bored anyway</p>
+              <span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">11:00</span>
+            </div>
+          </div>
+
+          <div class="d-flex ml-auto justify-content-between px-1 px-sm-2 pt-2 rpl">
+            <p class="align-self-start mr-3 mr-sm-4">okay then here i come</p>
+            <span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">11:00</span>
+          </div>
+
+          <div class="d-inline-flex">
+            <div class="d-flex justify-content-between px-1 px-sm-2 pt-2 msg">
+              <p class="align-self-start mr-2 mr-sm-4">okay then m waitingggg</p>
+              <span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">11:00</span>
+            </div>
+          </div>
+
+          <div class="d-inline-flex">
+            <div class="d-flex justify-content-between px-1 px-sm-2 pt-2 msg">
+              <p class="align-self-start mr-2 mr-sm-4">Chai peene chalenge!!<i class="far fa-grin-hearts ml-2" style="color: #00ace6; font-size:1.4rem;"></i></p>
+              <span class="text-muted align-self-end ml-auto pb-1" style="font-size: 0.8rem;">11:00</span>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="d-inline-block rounded text-capitalize conv-day"><i class="fas fa-video" style="font-size:1.2rem; color:#e60000; margin-right:0.5vw;"></i>Missed video call at 11:13</div>
+          </div>
+
+        </div>
+
+        <div class="d-flex">
+          <div class="input-group flex-nowrap m-3">
+            <div class="input-group-prepend" style="">
+              <i class="far fa-laugh fa-2x input-group-text p-3 emoji"></i>
+            </div>
+            <textarea class="form-control p-3 " placeholder="Your message here" style="border: none;"></textarea>
+            <div class="input-group-append"style=" border: none;">
+              <i class="fas fa-paperclip fa-2x input-group-text p-3" style="background-color: #ffffff; border: none;"></i>
+              <i class="fas fa-camera fa-2x input-group-text p-3 camera" style="background-color: #ffffff; border: none;"></i>
+            </div>
+          </div>
+          <div class=" align-self-center mx-3 p-3" style="background-color: #0d7347; color: #efefef; border-radius: 30rem;">
+              <i class="fas fa-microphone fa-2x"></i>
+          </div>
+        </div>
+
+    </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
