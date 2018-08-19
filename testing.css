@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	font-family: Lato, sans-serif;
 }
+/*-----Whatsapp Header----*/
 
 #main-header{
 	background-color: #0d7347;
@@ -47,6 +48,8 @@
 	background-color: #ffffff !important;
 }
 
+/*-----Chats section-----*/
+
 #nav-chats {
 	margin: 2vh 0;
 }
@@ -58,11 +61,6 @@
 .sender {
 	font-size: 1.6rem;
 }
-
-/*.chat{
-	margin-left: 1.5vw;
-	padd
-}*/
 
 .sent{
 	 color:#8f8f8f; 
@@ -79,12 +77,11 @@
 }
 
 .chat{
-	/*overflow: h
-	white-space: nowrap;
-	text-overflow: ellipsis !important;*/
 	max-width:55vw !important;
 }
 
+
+/*-----conversation-----*/
 
 .conv-day{
 	background-color: #bfe6fd;
@@ -106,19 +103,6 @@
 	background-image: url("wpbg.png");
 	background-size: cover;
 	background-attachment: fixed;
-}
-
-#modal-content{
-	background-image: url("wpbg.png");
-	background-size: contain;
-	background-attachment: scroll;
-}
-
-.modal-header{
-	background-color: #0d7347;
-	color: #ffffff;
-	font-size: 1.3rem;
-
 }
 
 .msg{
@@ -159,6 +143,23 @@
 	border-bottom-right-radius: 50rem !important;
 }
 
+
+/*-- modal chat box--*/
+#modal-content{
+	background-image: url("wpbg.png");
+	background-size: contain;
+	background-attachment: scroll;
+}
+
+.modal-header{
+	background-color: #0d7347;
+	color: #ffffff;
+	font-size: 1.3rem;
+
+}
+
+
+/*---unread chats----*/
 .unread-badge-pill {
 	font-size: 0.8rem !important;
 	padding: 0.8rem !important;
@@ -169,12 +170,15 @@
 }
 
 
+/*---profile page---*/
+
 #mydp{
 	width: 13rem;
 	height: 13rem;
 	border-radius: 50% !important;
 }
 
+/*---media queries--*/
 
 @media screen and (max-width: 575px) {
 	:root {
