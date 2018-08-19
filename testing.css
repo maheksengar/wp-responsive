@@ -5,13 +5,13 @@
 /*-----Whatsapp Header----*/
 
 #main-header{
-	background-color: #0d7347;
+	background-color: #128c7e;
 	color: #ffffff;
 	font-size: 1.8rem;
 }
 
 .nav{
-	background-color: #0d7347;
+	background-color: #128c7e;
 	position: sticky;
 }
 
@@ -38,7 +38,7 @@
 
 #nav-badge-pill {
 	font-size: 0.8em !important;
-	color: #0d7347;
+	color: #128c7e;
 	padding: 1vw !important;
 	background-color:#80b380 !important; 
 	border-radius: 100% !important;
@@ -152,7 +152,7 @@
 }
 
 .modal-header{
-	background-color: #0d7347;
+	background-color: #128c7e;
 	color: #ffffff;
 	font-size: 1.3rem;
 
